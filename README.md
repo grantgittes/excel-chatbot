@@ -2,11 +2,34 @@
 
 ## Installation
 
+```bash
+pip install poetry==1.6.1
+```
+```bash
+poetry install  --no-interaction --no-ansi --no-root
+```
+Note - this project requires an OPENAI_API_KEY in the environment
+
+
+Run with
+```bash
+poetry run langchain serve --port=8000
+```
+
+Docs and framework for routes can be found here\n
+```http://127.0.0.1:8000/docs```
+
+Note the frontend folder is not currently in use
+
+# Langchain instructions for reference
+## Installation
+
 Install the LangChain CLI if you haven't yet
 
 ```bash
 pip install -U langchain-cli
 ```
+
 
 ## Adding packages
 
