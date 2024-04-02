@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Agent Interface</title>
+</head>
+
+<body>
+    <h1>CSV Agent Interface</h1>
+
+    <!-- Upload Form -->
+    <h2>Upload CSV</h2>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" id="csvFile" name="file" accept=".csv, .xlsx, .xls" required>
+        <button type="submit">Upload CSV</button>
+    </form>
+
+    <!-- Chat Input -->
+    <h2>Chat with Agent</h2>
+    <input type="text" id="chatInput" placeholder="Ask something...">
+    <button onclick="sendChat()">Send</button>
+    <div id="chatResponse"></div>
+
+    <!-- Download Link (Update href dynamically) -->
+    <h2>Download CSV</h2>
+    <a href="" id="downloadLink" style="display:none;">Download CSV File</a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
